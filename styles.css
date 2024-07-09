@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 18%, 87%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} 
+
+.panel {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+
+}
+
+h1, h2, h3, p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+img { 
+    width: 100%;
+    min-width: 375px;
+    display: block;
+    margin: 0;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+p, li {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+ol li::marker {
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    font-size: 22px;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.highlight {
+    color: hsl(30, 10%, 34%);
+    font-weight: 800;
+}
+
+.prep-time {
+    background-color: hsla(333, 40%, 73%, 0.13);
+    padding: 10px;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+
+.ingredients, .instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 20px;
+    margin: 0 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    color: hsl(14, 45%, 36%);
+}
+
+table th {
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    font-size: 16;
+}
+
+table td {
+    font-weight: 800;
+    color: hsl(14, 45%, 36%);
+}
+
+table tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%) ;
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+    .panel {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+        padding: 20px;
+        
+    }
+
+    img {
+        width: 95%; /* Adjusted width for larger screens */
+        margin: 20px auto; /* Adjusted margin to center the image */
+        border-radius: 10px;
+    }
+
+    h1{
+        font-size: 45px;
+        margin: 0 30px;
+    }
+}
